@@ -40,7 +40,7 @@ createApp({
         downButton() {
             this.activeIndex --
 
-            if(this.activeIndex < 0) {
+            if(this.activeIndex === -1) {
                 this.activeIndex = this.slides.length -1
             }
         }
