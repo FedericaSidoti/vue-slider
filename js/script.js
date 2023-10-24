@@ -43,6 +43,9 @@ createApp({
             if(this.activeIndex === -1) {
                 this.activeIndex = this.slides.length -1
             }
+        },
+        clickThumbsToPreview(index) {
+            this.activeIndex = index
         }
     }
 }).mount('#app')
