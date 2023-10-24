@@ -46,8 +46,11 @@ createApp({
         },
         clickThumbsToPreview(index) {
             this.activeIndex = index
-        }
-    }
+        },
+    },
+    mounted() {
+        setInterval(this.upButton, 3000);
+    },
 }).mount('#app')
 
 
